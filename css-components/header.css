@@ -1,0 +1,110 @@
+:root {
+    --header-background-color: #161b22;
+    --text-color: aliceblue;
+}
+a {
+    white-space: nowrap;
+}
+
+header {
+    /* background-image: linear-gradient(
+        to bottom,
+        var(--header-background-color),
+        rgb(30, 34, 39)
+    ); */
+    width: 100%;
+    background-color: var(--header-background-color);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(64, 64, 78);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+/* Effect coutesy of https://stackoverflow.com/questions/54783325/how-can-i-style-the-first-letter-and-apply-this-linear-gradient-animation */
+.logo h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+        to right,
+        #8b73f6,
+        #ec6328 50%,
+        aliceblue 50%
+    );
+    background-size: 200% 100%;
+    background-position: 80%;
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo h1:hover {
+    background-position: 0%;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2vw;
+    font-size: 1.2rem;
+}
+
+header nav a,
+.login {
+    transition: all ease-in-out 200ms;
+    border-radius: 15px;
+    padding: 7px 10px;
+}
+
+header nav a:hover,
+.login:hover {
+    background-color: var(--text-color);
+    color: var(--header-background-color);
+}
+
+.login-signup {
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.signup {
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(89, 52, 235),
+        #ff792c
+    );
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all ease-in-out 200ms;
+    border: 2px solid var(--header-background-color);
+}
+
+.signup:hover {
+    border: 2px solid var(--text-color);
+    /* color: rgb(64, 64, 78); */
+}
+
+@media screen and (max-width: 1000px) {
+    .logo h1 {
+        display: none;
+    }
+}

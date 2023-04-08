@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav {
+    height: 100px;
+}
+
+footer nav ul {
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer nav li {
+    display: flex;
+    align-items: center;
+}
+
+footer nav a {
+    color: rgb(100, 100, 121);
+}
+
+footer nav a:hover {
+    color: aliceblue;
+}

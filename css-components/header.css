@@ -60,7 +60,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
     font-size: 1.2rem;
 }
 
@@ -73,13 +73,14 @@ header nav a,
 
 header nav a:hover,
 .login:hover {
+    position: relative;
     background-color: var(--text-color);
     color: var(--header-background-color);
 }
 
 .login-signup {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     margin-right: 30px;
     align-items: center;
     font-size: 1.2rem;
@@ -105,8 +106,24 @@ header nav a:hover,
 }
 
 @media screen and (max-width: 1000px) {
+    .logo {
+        display: block;
+    }
     .logo h1 {
         display: none;
+    }
+
+    .login-signup {
+        margin: 0;
+        gap: 5px;
+    }
+
+    header nav ul {
+        gap: min(10px, 5vw);
+    }
+
+    header a {
+        font-size: 1rem;
     }
 }
 

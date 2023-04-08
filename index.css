@@ -11,6 +11,7 @@
 
 body {
     background-color: rgb(17, 18, 22);
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
@@ -40,6 +41,7 @@ main {
     gap: 7px;
 }
 .category-name {
+    white-space: nowrap;
     margin-bottom: 10px;
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,10 +72,10 @@ main {
     );
 }
 
-#fiction h2 {
+#sales h2 {
     background-image: linear-gradient(
         to right,
-        #1f29e6,
+        #335ff0,
         #1fefa6 50%,
         aliceblue 50%
     );
@@ -113,6 +115,7 @@ main {
 
 .book-desc {
     display: flex;
+    width: 50%;
     flex-direction: column;
     gap: 5px;
 }
@@ -141,8 +144,8 @@ main {
     text-align: center;
     border-radius: 20px;
     border: aliceblue 1px solid;
-    margin-bottom: 10px;
     transition: all ease-in-out 200ms;
+    margin-bottom: 10px;
 }
 
 .book-price:hover {
@@ -151,7 +154,22 @@ main {
     content: "Shop Now!";
 }
 
+.discounted-price {
+    background-color: #ef2d1f;
+}
+
+.original-price {
+    text-align: center;
+    text-decoration: line-through;
+    font-family: "Roboto Slab", "serif";
+    font-size: 1.2rem;
+    color: rgb(104, 104, 126);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .icons {
+    align-self: center;
     display: flex;
     gap: 10px;
 }
@@ -173,7 +191,7 @@ main {
     margin: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .category {
         border: none;
     }
@@ -184,14 +202,12 @@ main {
     }
 
     .book {
-        width: 100%;
+        width: max(300px, 100%);
         padding-bottom: 20px;
         margin-top: 20px;
         border-bottom: 2px solid rgb(64, 64, 78);
     }
-    /* 
-    .book-img-wrapper,
-    .book-img {
-        width: 500px;
-    } */
+    .category-name {
+        background-position: 0%;
+    }
 }

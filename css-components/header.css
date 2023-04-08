@@ -2,17 +2,13 @@
     --header-background-color: #161b22;
     --text-color: aliceblue;
 }
-a {
+nav a {
     white-space: nowrap;
 }
 
 header {
-    /* background-image: linear-gradient(
-        to bottom,
-        var(--header-background-color),
-        rgb(30, 34, 39)
-    ); */
     width: 100%;
+    position: relative;
     background-color: var(--header-background-color);
     display: flex;
     align-items: center;
@@ -50,6 +46,10 @@ header {
 
 .logo h1:hover {
     background-position: 0%;
+}
+
+#menu-bar {
+    display: none;
 }
 
 header nav {
@@ -96,6 +96,7 @@ header nav a:hover,
     font-weight: 500;
     transition: all ease-in-out 200ms;
     border: 2px solid var(--header-background-color);
+    white-space: nowrap;
 }
 
 .signup:hover {
@@ -106,5 +107,57 @@ header nav a:hover,
 @media screen and (max-width: 1000px) {
     .logo h1 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo h1 {
+        display: none;
+    }
+    .login-signup {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #menu-bar {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+    }
+
+    #menu-bar:hover + #navbar {
+        display: block;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        border: 1px solid rgb(64, 64, 78);
+        padding: 10px 0;
+    }
+
+    header nav:hover {
+        display: block;
+        width: 100%;
+    }
+
+    header nav a:hover {
+        background-color: var(--header-background-color);
+        color: var(--text-color);
     }
 }

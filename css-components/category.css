@@ -2,6 +2,7 @@
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(64, 64, 78);
+    width: 80%;
 }
 
 .category-name {
@@ -16,6 +17,7 @@
     font-size: 2.2rem;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 /* Animations for the Special offers category  */
 @keyframes rotate-gradient {
@@ -30,7 +32,7 @@
 #sales .category-name {
     background-image: linear-gradient(
         to right,
-        rgb(233, 63, 16),
+        rgb(233, 63, 16) 10%,
         #5379f5,
         #ef1faa
     );
@@ -72,4 +74,14 @@
 
 .category-name:hover {
     background-position: 0%;
+}
+
+@media screen and (max-width: 1000px) {
+    .category {
+        border: none;
+    }
+
+    .category-name {
+        background-position: 0%;
+    }
 }

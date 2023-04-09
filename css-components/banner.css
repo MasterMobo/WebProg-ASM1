@@ -1,29 +1,9 @@
-.banner-wrapper {
-    overflow: hidden;
-    width: 200vw;
-    position: relative;
-    right: 15%;
-    display: flex;
-    flex-wrap: nowrap;
-    /* justify-content: center;
-    align-items: center; */
-    animation: moveBanner 5s infinite alternate-reverse ease-in-out;
-}
-
 .banner {
-    height: 200px;
+    width: 100%;
 }
 
 .banner img {
-    height: 100%;
+    width: 100%;
     object-fit: cover;
-}
-
-@keyframes moveBanner {
-    0% {
-        transform: translateX(-10%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+    border-bottom: 1px solid rgb(64, 64, 78);
 }

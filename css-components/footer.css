@@ -27,3 +27,12 @@ footer nav a {
 footer nav a:hover {
     color: aliceblue;
 }
+
+@media screen and (max-width: 1000px) {
+    .category {
+        border: none;
+    }
+    .category-name {
+        background-position: 0%;
+    }
+}

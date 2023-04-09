@@ -6,9 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Odyssey: Buy Books, Fiction, Novels</title>
         <link rel="icon" href="./images/boat.png" />
+
+        <!-- Main stylesheet -->
         <link rel="stylesheet" href="index.css" />
+
+        <!-- CSS Components -->
         <link rel="stylesheet" href="./css-components/header.css" />
+        <link rel="stylesheet" href="./css-components/banner.css" />
         <link rel="stylesheet" href="./css-components/footer.css" />
+        <link rel="stylesheet" href="./css-components/category.css" />
+        <link rel="stylesheet" href="./css-components/book-preview.css" />
     </head>
     <body>
         <!-- Header -->
@@ -40,10 +47,194 @@
 
         <!-- Main Content -->
         <main>
-            <!-- Best Sellers Category -->
-            <section class="category" id="best-sellers">
+            <div class="banner-wrapper">
+                <a href="#!" class="banner">
+                    <img
+                        class="banner"
+                        src="./images/banners/banner1.jpg"
+                        alt="banner1"
+                    />
+                </a>
+                <a href="#!" class="banner">
+                    <img src="./images/banners/banner2.jpg" alt="banner2"
+                /></a>
+                <a href="#!" class="banner">
+                    <img
+                        class="banner"
+                        src="./images/banners/banner3.jpg"
+                        alt="banner3"
+                /></a>
+                <a href="#!" class="banner">
+                    <img
+                        class="banner"
+                        src="./images/banners/banner4.png"
+                        alt="banner1"
+                    />
+                </a>
+                <a href="#!" class="banner">
+                    <img
+                        class="banner"
+                        src="./images/banners/banner1.jpg"
+                        alt="banner1"
+                    />
+                </a>
+                <a href="#!" class="banner">
+                    <img src="./images/banners/banner2.jpg" alt="banner2"
+                /></a>
+                <a href="#!" class="banner">
+                    <img
+                        class="banner"
+                        src="./images/banners/banner3.jpg"
+                        alt="banner3"
+                /></a>
+                <a href="#!" class="banner">
+                    <img
+                        class="banner"
+                        src="./images/banners/banner4.png"
+                        alt="banner1"
+                    />
+                </a>
+            </div>
+            <!-- Special Offers Category -->
+            <section class="category" id="sales">
                 <a href="#!">
-                    <h2 class="category-name">Best Sellers</h2>
+                    <h2 class="category-name">Special Offers</h2>
+                </a>
+                <div class="book-list">
+                    <!-- Book 1 -->
+                    <div class="book">
+                        <!-- Book Image -->
+                        <a href="#!" class="book-img-wrapper">
+                            <img
+                                src="./images/books/american_mermaid.jpg"
+                                alt="dune"
+                                class="book-img"
+                            />
+                        </a>
+                        <!-- Book Description -->
+                        <div class="book-desc">
+                            <a href="#!" class="book-name"> American Mermaid</a>
+                            <p class="book-author">Julia Langbein</p>
+                            <a href="#!" class="book-price discounted-price"
+                                >$14.99</a
+                            >
+                            <p class="original-price">$21.79</p>
+
+                            <!-- Icons -->
+                            <div class="icons">
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/heart.png"
+                                        alt="heart"
+                                    />
+                                </a>
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/shopping-cart.png"
+                                        alt="cart"
+                                    />
+                                </a>
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/info.png"
+                                        alt="info"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book">
+                        <!-- Book Image -->
+                        <a href="#!" class="book-img-wrapper">
+                            <img
+                                src="./images/books/above_ground.jpg"
+                                alt="dune"
+                                class="book-img"
+                            />
+                        </a>
+                        <!-- Book Description -->
+                        <div class="book-desc">
+                            <a href="#!" class="book-name"> Above Ground</a>
+                            <p class="book-author">Clint Smith</p>
+                            <a href="#!" class="book-price discounted-price"
+                                >$12.99</a
+                            >
+                            <p class="original-price">$23.07</p>
+
+                            <!-- Icons -->
+                            <div class="icons">
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/heart.png"
+                                        alt="heart"
+                                    />
+                                </a>
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/shopping-cart.png"
+                                        alt="cart"
+                                    />
+                                </a>
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/info.png"
+                                        alt="info"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book">
+                        <!-- Book Image -->
+                        <a href="#!" class="book-img-wrapper">
+                            <img
+                                src="./images/books/stars_and_smoke.jpg"
+                                alt="dune"
+                                class="book-img"
+                            />
+                        </a>
+                        <!-- Book Description -->
+                        <div class="book-desc">
+                            <a href="#!" class="book-name"> Stars and Smoke</a>
+                            <p class="book-author">Marie Lu</p>
+                            <a href="#!" class="book-price discounted-price"
+                                >$19.99</a
+                            >
+                            <p class="original-price">$22.62</p>
+
+                            <!-- Icons -->
+                            <div class="icons">
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/heart.png"
+                                        alt="heart"
+                                    />
+                                </a>
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/shopping-cart.png"
+                                        alt="cart"
+                                    />
+                                </a>
+                                <a class="icon-wrapper" href="#!">
+                                    <img
+                                        src="./images/icons/info.png"
+                                        alt="info"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Fiction Category -->
+            <section class="category" id="fiction">
+                <a href="#!">
+                    <h2 class="category-name">Fiction</h2>
                 </a>
                 <div class="book-list">
                     <!-- Book 1 -->
@@ -170,10 +361,10 @@
                 </div>
             </section>
 
-            <!-- New Releases Category -->
-            <section class="category" id="new-releases">
+            <!-- Non-Fiction Category -->
+            <section class="category" id="nonfiction">
                 <a href="#!">
-                    <h2 class="category-name">New Releases</h2>
+                    <h2 class="category-name">Non-Fiction</h2>
                 </a>
                 <div class="book-list">
                     <!-- Book 1 -->
@@ -300,11 +491,10 @@
                 </div>
             </section>
 
-            <!-- Special Offers Category -->
-            <section class="category" id="sales">
+            <!-- Textbooks Category -->
+            <section class="category" id="textbooks">
                 <a href="#!">
-                    <!-- NOTE: This category will be refered to as "sales" in the code -->
-                    <h2 class="category-name">Special Offers</h2>
+                    <h2 class="category-name">Textbooks</h2>
                 </a>
                 <div class="book-list">
                     <!-- Book 1 -->
@@ -321,10 +511,7 @@
                         <div class="book-desc">
                             <a href="#!" class="book-name"> American Mermaid</a>
                             <p class="book-author">Julia Langbein</p>
-                            <a href="#!" class="book-price discounted-price"
-                                >$14.99</a
-                            >
-                            <p class="original-price">21.79</p>
+                            <a href="#!" class="book-price">$14.99</a>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -364,10 +551,7 @@
                         <div class="book-desc">
                             <a href="#!" class="book-name"> Above Ground</a>
                             <p class="book-author">Clint Smith</p>
-                            <a href="#!" class="book-price discounted-price"
-                                >$12.99</a
-                            >
-                            <p class="original-price">23.07</p>
+                            <a href="#!" class="book-price">$12.99</a>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -407,10 +591,7 @@
                         <div class="book-desc">
                             <a href="#!" class="book-name"> Stars and Smoke</a>
                             <p class="book-author">Marie Lu</p>
-                            <a href="#!" class="book-price discounted-price"
-                                >$19.99</a
-                            >
-                            <p class="original-price">22.62</p>
+                            <a href="#!" class="book-price">$19.99</a>
 
                             <!-- Icons -->
                             <div class="icons">

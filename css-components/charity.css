@@ -27,7 +27,7 @@
     gap: 40px;
     margin-top: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgb(113, 121, 126);
+    border-bottom: 1px solid rgb(64, 64, 78);
 }
 
 .charity-video {
@@ -67,6 +67,7 @@
 }
 
 .charity-link {
+    font-weight: 500;
     display: block;
     align-self: flex-start;
     padding: 10px;

@@ -1,0 +1,63 @@
+.images-price {
+    display: flex;
+    align-self: flex-start;
+    gap: 7vw;
+    margin-top: 40px;
+}
+
+.images {
+    display: flex;
+    gap: 1vw;
+}
+
+#main-image {
+    width: 20vw;
+    border-radius: 5px;
+}
+
+.sub-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 5vw;
+}
+
+.sub-images img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.price-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price {
+    font-family: "Roboto Slab", "serif";
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    align-self: flex-start;
+    background-color: orangered;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: transparent;
+    border: 2px solid aliceblue;
+}
+.add-to-cart img {
+    width: 30px;
+}

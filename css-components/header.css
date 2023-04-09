@@ -102,7 +102,6 @@ header nav a:hover,
 
 .signup:hover {
     border: 2px solid var(--text-color);
-    /* color: rgb(64, 64, 78); */
 }
 
 @media screen and (max-width: 1000px) {

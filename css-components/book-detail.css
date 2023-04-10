@@ -1,8 +1,23 @@
-.images-price {
+main {
+    height: 100%;
+}
+
+.breadcrumb {
+    margin: 20px 0;
+    color: var(--unhighlighted-color);
+    font-weight: 500;
+}
+.book-wrapper {
     display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.detail {
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
     align-self: flex-start;
-    gap: 7vw;
-    margin-top: 40px;
 }
 
 .images {
@@ -12,7 +27,17 @@
 
 #main-image {
     width: 20vw;
+    object-fit: contain;
+    align-self: flex-start;
     border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 20px 2px rgb(39, 52, 68);
+}
+
+#main-image:hover {
+    transform: scale(1.05);
+    border: 1px solid orangered;
 }
 
 .sub-images {
@@ -25,21 +50,26 @@
 .sub-images img {
     width: 100%;
     border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 20px 2px rgb(39, 52, 68);
 }
 
-.price-cart {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.sub-images img:hover {
+    transform: scale(1.1);
+    border: 1px solid orangered;
 }
 
 .price {
     font-family: "Roboto Slab", "serif";
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .add-to-cart {
+    white-space: nowrap;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -58,6 +88,116 @@
     background-color: transparent;
     border: 2px solid aliceblue;
 }
-.add-to-cart img {
+
+.cart-icon {
     width: 30px;
+}
+
+.add-to-cart:hover .cart-icon {
+    animation: hop 0.5s ease-in-out;
+}
+
+@keyframes hop {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.book-name {
+    font-family: "Roboto Slab", "serif";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.name-seperator {
+    font-size: 2rem;
+    display: none;
+}
+
+.book-author {
+    font-family: "Roboto Slab", "serif";
+    font-style: italic;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 20px;
+}
+.show-more {
+    display: none;
+}
+.book-desc {
+    font-family: "Roboto Slab", "serif";
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #main-image {
+        object-fit: contain;
+        width: 80vw;
+        height: 40vw;
+    }
+
+    .detail {
+        align-self: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .book-name-author {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        align-self: center;
+        white-space: nowrap;
+        border-bottom: 2px solid var(--border-color);
+        margin-bottom: 10px;
+    }
+    .name-seperator {
+        display: block;
+    }
+    .book-author {
+        border-bottom: none;
+        font-size: 2.2rem;
+    }
+    .images {
+        flex-direction: column;
+    }
+    .sub-images {
+        flex-direction: row;
+    }
+    .sub-images img {
+        width: 26vw;
+    }
+    .book-wrapper {
+        flex-direction: column;
+    }
+    .book-desc {
+        display: none;
+        align-self: center;
+        justify-self: center;
+    }
+    .price {
+        margin-top: 0;
+    }
+    .add-to-cart {
+        align-self: center;
+    }
+
+    .show-more {
+        display: block;
+        font-size: 1.3rem;
+        color: var(--unhighlighted-color);
+        margin-bottom: 20px;
+    }
+
+    .show-more:hover ~ .book-desc {
+        width: 80vw;
+
+        display: block;
+    }
 }

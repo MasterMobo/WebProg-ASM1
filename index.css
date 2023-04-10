@@ -8,6 +8,13 @@
     font-weight: 300;
     color: aliceblue;
 }
+/* Global Variables */
+:root {
+    --header-background-color: #161b22;
+    --text-color: aliceblue;
+    --border-color: rgb(64, 64, 78);
+    --unhighlighted-color: rgb(100, 100, 121);
+}
 
 body {
     background-color: rgb(17, 18, 22);

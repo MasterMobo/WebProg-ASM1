@@ -45,6 +45,24 @@
 
 /* Custom color schems for different categories */
 
+#new-releases .category-name {
+    background-image: linear-gradient(
+        to right,
+        #335ff0,
+        #1fefa6 50%,
+        aliceblue 50%
+    );
+}
+
+#best-sellers .category-name {
+    background-image: linear-gradient(
+        to right,
+        #b4e61f,
+        #ef2d1f 50%,
+        aliceblue 50%
+    );
+}
+
 #fiction .category-name {
     background-image: linear-gradient(
         to right,

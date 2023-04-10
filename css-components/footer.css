@@ -21,7 +21,9 @@ footer nav li {
 }
 
 footer nav a {
+    font-size: 1.2rem;
     color: rgb(100, 100, 121);
+    transition: all ease-in-out 200ms;
 }
 
 footer nav a:hover {
@@ -32,9 +34,12 @@ footer nav a:hover {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: start;
+        align-items: center;
         gap: 10px;
     }
-
+    footer nav li {
+        width: 20%;
+    }
     footer nav a {
         font-size: 1.2rem;
     }

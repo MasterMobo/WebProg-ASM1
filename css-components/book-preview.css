@@ -118,9 +118,15 @@
     }
 
     .book {
-        width: max(300px, 100%);
+        width: 100%;
         padding-bottom: 20px;
         margin-top: 20px;
         border-bottom: 2px solid rgb(64, 64, 78);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .book-name {
+        font-size: 1.2rem;
     }
 }

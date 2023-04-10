@@ -22,7 +22,6 @@
 }
 
 .charity {
-    width: 100%;
     display: flex;
     gap: 40px;
     margin-top: 40px;
@@ -32,6 +31,7 @@
 
 .charity-video {
     width: 400px;
+    /* aspect-ratio: 16/9; */
     border: none;
 }
 
@@ -51,6 +51,10 @@
     font-family: "Roboto Slab", serif;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.charity-name:hover {
+    text-decoration: underline;
 }
 
 .charity-logo {
@@ -80,7 +84,7 @@
         gap: 10px;
     }
     .charity-video {
-        width: 40vw;
+        width: 50vw;
     }
     .charity-desc {
         display: none;
@@ -91,5 +95,14 @@
 
     .charity-name {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .charity-name {
+        font-size: 1.2rem;
+    }
+    .charity-link {
+        font-size: 0.8rem;
     }
 }

@@ -160,9 +160,12 @@ main {
     .name-seperator {
         display: block;
     }
+    .book-name {
+        font-size: 1.8rem;
+    }
     .book-author {
         border-bottom: none;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
     .images {
         flex-direction: column;

@@ -67,6 +67,16 @@
     );
 }
 
+.red-blue-pink {
+    background-image: linear-gradient(
+        to right,
+        rgb(233, 63, 16),
+        #5379f5,
+        #ef1faa 50%,
+        aliceblue 50%
+    );
+}
+
 /* Gradient scroll on hover effect */
 .category-name:hover {
     background-position: 0%;
@@ -102,6 +112,14 @@
     background-image: linear-gradient(to right, #b4e61f, #ef2d1f);
 }
 
+.moving-icy-mint {
+    background-image: linear-gradient(to right, #335ff0, #1fefa6);
+}
+
+.moving-pink-green {
+    background-image: linear-gradient(to right, #e61fdf, #1fef42);
+}
+
 .moving-gradient {
     animation-name: rotate-gradient;
     animation-duration: 3s;
@@ -110,6 +128,25 @@
     font-weight: 700;
 }
 
+.category-tagline {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--unhighlighted-color);
+}
+
+.category-tagline a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--unhighlighted-color);
+}
+
+.category-tagline a:hover {
+    text-decoration: underline;
+}
 @media screen and (max-width: 960px) {
     .category {
         border: none;

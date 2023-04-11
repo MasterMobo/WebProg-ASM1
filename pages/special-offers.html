@@ -13,6 +13,7 @@
         <!-- CSS Components -->
         <link rel="stylesheet" href="../css-components/header.css" />
         <link rel="stylesheet" href="../css-components/footer.css" />
+        <link rel="stylesheet" href="../css-components/banner.css" />
         <link rel="stylesheet" href="../css-components/category.css" />
         <link rel="stylesheet" href="../css-components/book-preview.css" />
     </head>
@@ -50,6 +51,11 @@
 
         <!-- Main Content -->
         <main>
+            <!-- Baner -->
+            <a href="#!" class="banner">
+                <!-- Image courtesy of https://bookshop.org/-->
+                <img src="../images/banners/banner7.png" alt="banner1" />
+            </a>
             <h1
                 id="page-title"
                 class="category-name moving-red-blue-pink moving-gradient"
@@ -57,27 +63,31 @@
                 Special Offers
             </h1>
 
-            <!-- This Week Category -->
-            <section class="category" id="this-week">
-                <h2 class="default-category-name">This Week</h2>
+            <!-- Limited Time Category -->
+            <section class="category" id="limited-time">
+                <h2 class="default-category-name">Limited Time Offers 🔥</h2>
+                <p class="category-tagline">
+                    Don't miss out on these hot deals!
+                </p>
                 <div class="book-list">
                     <!-- Book 1 -->
                     <div class="book">
                         <!-- Book Image -->
                         <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/society_of_shame.jpg"
+                                src="../images/books/american_mermaid.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
                         </a>
                         <!-- Book Description -->
                         <div class="book-desc">
-                            <a href="#!" class="book-name">
-                                The Society of Shame</a
+                            <a href="#!" class="book-name"> American Mermaid</a>
+                            <p class="book-author">Julia Langbein</p>
+                            <a href="#!" class="book-price discounted-price"
+                                >$14.99</a
                             >
-                            <p class="book-author">Jane Roper</p>
-                            <a href="#!" class="book-price">$26.04</a>
+                            <p class="original-price">$21.79</p>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -102,23 +112,25 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Book 2 -->
                     <div class="book">
                         <!-- Book Image -->
                         <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/egghead.jpg"
+                                src="../images/books/above_ground.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
                         </a>
                         <!-- Book Description -->
                         <div class="book-desc">
-                            <a href="#!" class="book-name">
-                                Egghead: Or, You Can't Survive on Ideas Alone</a
+                            <a href="#!" class="book-name"> Above Ground</a>
+                            <p class="book-author">Clint Smith</p>
+                            <a href="#!" class="book-price discounted-price"
+                                >$12.99</a
                             >
-                            <p class="book-author">Bo Burnham</p>
-                            <a href="#!" class="book-price">$23.61</a>
+                            <p class="original-price">$23.07</p>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -143,33 +155,25 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Book 3 -->
                     <div class="book">
                         <!-- Book Image -->
-                        <a
-                            href="../pages/books/dune.html"
-                            class="book-img-wrapper"
-                        >
+                        <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/dune.jpg"
+                                src="../images/books/stars_and_smoke.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
                         </a>
                         <!-- Book Description -->
                         <div class="book-desc">
-                            <a
-                                href="../pages/books/dune.html"
-                                class="book-name"
+                            <a href="#!" class="book-name"> Stars and Smoke</a>
+                            <p class="book-author">Marie Lu</p>
+                            <a href="#!" class="book-price discounted-price"
+                                >$13.99</a
                             >
-                                Dune</a
-                            >
-                            <p class="book-author">Frank Herbert</p>
-                            <a
-                                href="../pages/books/dune.html"
-                                class="book-price"
-                                >$21.67</a
-                            >
+                            <p class="original-price">$22.62</p>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -197,18 +201,19 @@
                 </div>
             </section>
 
-            <!-- This Month Category -->
-            <section class="category" id="this-month">
-                <a href="../pages/best-sellers.html">
-                    <h2 class="default-category-name">This Month</h2>
-                </a>
+            <!-- Spring Sales Category -->
+            <section class="category" id="spring-sales">
+                <h2 class="default-category-name">Spring Sales 🌸</h2>
+                <p class="category-tagline">
+                    Celebrate Sakura season with these wonderful deals!
+                </p>
                 <div class="book-list">
                     <!-- Book 1 -->
                     <div class="book">
                         <!-- Book Image -->
                         <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/society_of_shame.jpg"
+                                src="../images/books/when-the-sakura-bloom.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
@@ -216,11 +221,13 @@
                         <!-- Book Description -->
                         <div class="book-desc">
                             <a href="#!" class="book-name">
-                                The Society of Shame</a
+                                When The Sakura Bloom</a
                             >
-                            <p class="book-author">Jane Roper</p>
-                            <a href="#!" class="book-price">$26.04</a>
-
+                            <p class="book-author">Narisa Togo</p>
+                            <a href="#!" class="book-price sakura-price"
+                                >$16.34</a
+                            >
+                            <p class="original-price">$23.08</p>
                             <!-- Icons -->
                             <div class="icons">
                                 <a class="icon-wrapper" href="#!">
@@ -244,12 +251,13 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Book 2 -->
                     <div class="book">
                         <!-- Book Image -->
                         <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/egghead.jpg"
+                                src="../images/books/peach-blossom-spring.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
@@ -257,11 +265,13 @@
                         <!-- Book Description -->
                         <div class="book-desc">
                             <a href="#!" class="book-name">
-                                Egghead: Or, You Can't Survive on Ideas Alone</a
+                                Peach Blossom Spring</a
                             >
-                            <p class="book-author">Bo Burnham</p>
-                            <a href="#!" class="book-price">$23.61</a>
-
+                            <p class="book-author">Melissa Fu</p>
+                            <a href="#!" class="book-price sakura-price"
+                                >$21.04</a
+                            >
+                            <p class="original-price">$26.09</p>
                             <!-- Icons -->
                             <div class="icons">
                                 <a class="icon-wrapper" href="#!">
@@ -288,31 +298,21 @@
                     <!-- Book 3 -->
                     <div class="book">
                         <!-- Book Image -->
-                        <a
-                            href="../pages/books/dune.html"
-                            class="book-img-wrapper"
-                        >
+                        <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/dune.jpg"
+                                src="../images/books/vegan-japaneasy.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
                         </a>
                         <!-- Book Description -->
                         <div class="book-desc">
-                            <a
-                                href="../pages/books/dune.html"
-                                class="book-name"
+                            <a href="#!" class="book-name"> Vegan Japaneasy </a>
+                            <p class="book-author">Tim Anderson</p>
+                            <a href="#!" class="book-price sakura-price"
+                                >$25.45</a
                             >
-                                Dune</a
-                            >
-                            <p class="book-author">Frank Herbert</p>
-                            <a
-                                href="../pages/books/dune.html"
-                                class="book-price"
-                                >$21.67</a
-                            >
-
+                            <p class="original-price">$30.02</p>
                             <!-- Icons -->
                             <div class="icons">
                                 <a class="icon-wrapper" href="#!">
@@ -339,18 +339,22 @@
                 </div>
             </section>
 
-            <!-- 2022's Biggest Hits Category -->
-            <section class="category" id="2022">
-                <a href="../pages/best-sellers.html">
-                    <h2 class="default-category-name">2022's Biggest Hits</h2>
-                </a>
+            <!-- World Book Day Category -->
+            <section class="category" id="world-book-day">
+                <h2 class="default-category-name">World Book Day 📚</h2>
+                <p class="category-tagline">
+                    All proceeds from these books will be donated to the
+                    <a href="https://worldliteracyfoundation.org"
+                        >World Literacy Foundation.</a
+                    >
+                </p>
                 <div class="book-list">
                     <!-- Book 1 -->
                     <div class="book">
                         <!-- Book Image -->
                         <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/society_of_shame.jpg"
+                                src="../images/books/when-grandma-gives-you-a-lemon-tree.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
@@ -358,10 +362,14 @@
                         <!-- Book Description -->
                         <div class="book-desc">
                             <a href="#!" class="book-name">
-                                The Society of Shame</a
+                                When Grandma Gives You a Lemon Tree
+                            </a>
+                            <p class="book-author">
+                                Jamie L. B. Deenihan, Lorraine Rocha
+                            </p>
+                            <a href="#!" class="book-price green-price"
+                                >$14.35</a
                             >
-                            <p class="book-author">Jane Roper</p>
-                            <a href="#!" class="book-price">$26.04</a>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -391,18 +399,20 @@
                         <!-- Book Image -->
                         <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/egghead.jpg"
+                                src="../images/books/ambitious-girl.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
                         </a>
                         <!-- Book Description -->
                         <div class="book-desc">
-                            <a href="#!" class="book-name">
-                                Egghead: Or, You Can't Survive on Ideas Alone</a
+                            <a href="#!" class="book-name"> Ambitious Girl</a>
+                            <p class="book-author">
+                                Meena Harris, Marissa Valdez
+                            </p>
+                            <a href="#!" class="book-price green-price"
+                                >$12.61</a
                             >
-                            <p class="book-author">Bo Burnham</p>
-                            <a href="#!" class="book-price">$23.61</a>
 
                             <!-- Icons -->
                             <div class="icons">
@@ -430,29 +440,21 @@
                     <!-- Book 3 -->
                     <div class="book">
                         <!-- Book Image -->
-                        <a
-                            href="../pages/books/dune.html"
-                            class="book-img-wrapper"
-                        >
+                        <a href="#!" class="book-img-wrapper">
                             <img
-                                src="../images/books/dune.jpg"
+                                src="../images/books/a-girl-like-you.jpg"
                                 alt="dune"
                                 class="book-img"
                             />
                         </a>
                         <!-- Book Description -->
                         <div class="book-desc">
-                            <a
-                                href="../pages/books/dune.html"
-                                class="book-name"
-                            >
-                                Dune</a
-                            >
-                            <p class="book-author">Frank Herbert</p>
-                            <a
-                                href="../pages/books/dune.html"
-                                class="book-price"
-                                >$21.67</a
+                            <a href="#!" class="book-name"> A Girl Like You</a>
+                            <p class="book-author">
+                                Frank Murphy, Carla Murphy
+                            </p>
+                            <a href="#!" class="book-price green-price"
+                                >$10.32</a
                             >
 
                             <!-- Icons -->

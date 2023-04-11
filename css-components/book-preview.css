@@ -75,6 +75,14 @@
     background-color: #ef2d1f;
 }
 
+.sakura-price {
+    background-color: #ef6182;
+}
+
+.green-price {
+    background-color: #288737;
+}
+
 .original-price {
     text-align: center;
     text-decoration: line-through;

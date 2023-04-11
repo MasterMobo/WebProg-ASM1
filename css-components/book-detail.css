@@ -64,7 +64,7 @@ main {
     font-family: "Roboto Slab", "serif";
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -153,7 +153,6 @@ main {
         align-items: baseline;
         gap: 10px;
         align-self: center;
-        white-space: nowrap;
         border-bottom: 2px solid var(--border-color);
         margin-bottom: 10px;
     }
@@ -161,11 +160,11 @@ main {
         display: block;
     }
     .book-name {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     .book-author {
         border-bottom: none;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .images {
         flex-direction: column;
@@ -200,7 +199,17 @@ main {
 
     .show-more:hover ~ .book-desc {
         width: 80vw;
-
         display: block;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .book-name-author {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .name-seperator {
+        display: none;
     }
 }

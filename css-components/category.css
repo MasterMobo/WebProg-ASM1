@@ -1,3 +1,14 @@
+#page-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 80%;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
 .category {
     margin-top: 20px;
     padding-bottom: 20px;
@@ -5,8 +16,15 @@
     width: 80%;
 }
 
+.default-category-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
 .category-name {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin-bottom: 10px;
     background-clip: text;
     -webkit-background-clip: text;
@@ -19,7 +37,48 @@
     transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
 }
-/* Animations for the Special offers category  */
+
+/* Custom color schemes*/
+
+.icy-mint {
+    background-image: linear-gradient(
+        to right,
+        #335ff0,
+        #1fefa6 50%,
+        aliceblue 50%
+    );
+}
+
+.fiery-lime {
+    background-image: linear-gradient(
+        to right,
+        #b4e61f,
+        #ef2d1f 50%,
+        aliceblue 50%
+    );
+}
+
+.pink-green {
+    background-image: linear-gradient(
+        to right,
+        #e61fdf,
+        #1fef42 50%,
+        aliceblue 50%
+    );
+}
+
+/* Gradient scroll on hover effect */
+.category-name:hover {
+    background-position: 0%;
+}
+
+/* Full gradient (without scroll) */
+.full-gradient {
+    background-position: 0%;
+}
+
+/* Moving Gradients  */
+
 @keyframes rotate-gradient {
     from {
         background-position: 0%;
@@ -29,13 +88,21 @@
     }
 }
 
-#sales .category-name {
+/* Color schemes for moving gradients */
+.moving-red-blue-pink {
     background-image: linear-gradient(
         to right,
         rgb(233, 63, 16) 10%,
         #5379f5,
         #ef1faa
     );
+}
+
+.moving-fiery-lime {
+    background-image: linear-gradient(to right, #b4e61f, #ef2d1f);
+}
+
+.moving-gradient {
     animation-name: rotate-gradient;
     animation-duration: 3s;
     animation-direction: alternate;
@@ -43,62 +110,18 @@
     font-weight: 700;
 }
 
-/* Custom color schems for different categories */
-
-#new-releases .category-name {
-    background-image: linear-gradient(
-        to right,
-        #335ff0,
-        #1fefa6 50%,
-        aliceblue 50%
-    );
-}
-
-#best-sellers .category-name {
-    background-image: linear-gradient(
-        to right,
-        #b4e61f,
-        #ef2d1f 50%,
-        aliceblue 50%
-    );
-}
-
-#fiction .category-name {
-    background-image: linear-gradient(
-        to right,
-        #335ff0,
-        #1fefa6 50%,
-        aliceblue 50%
-    );
-}
-
-#nonfiction .category-name {
-    background-image: linear-gradient(
-        to right,
-        #b4e61f,
-        #ef2d1f 50%,
-        aliceblue 50%
-    );
-}
-
-#textbooks .category-name {
-    background-image: linear-gradient(
-        to right,
-        #e61fdf,
-        #1fef42 50%,
-        aliceblue 50%
-    );
-}
-
-.category-name:hover {
-    background-position: 0%;
-}
-
 @media screen and (max-width: 960px) {
     .category {
         border: none;
+        margin-top: 10px;
     }
     .category-name {
+        font-size: 1.8rem;
         background-position: 0%;
+        margin-bottom: 0;
+    }
+
+    #page-title {
+        font-size: 1.8rem;
     }
 }

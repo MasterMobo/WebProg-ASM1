@@ -24,6 +24,8 @@
 .charity {
     display: flex;
     gap: 40px;
+    width: 100%;
+
     margin-top: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid rgb(64, 64, 78);
@@ -31,7 +33,6 @@
 
 .charity-video {
     width: 400px;
-    /* aspect-ratio: 16/9; */
     border: none;
 }
 
@@ -39,6 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 50%;
 }
 
 .charity-label {
@@ -83,6 +85,9 @@
     .charity {
         gap: 10px;
     }
+    .charity-section-label {
+        font-size: 1.8rem;
+    }
     .charity-video {
         width: 50vw;
     }
@@ -99,10 +104,26 @@
 }
 
 @media screen and (max-width: 400px) {
+    .charity {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-top: 30px;
+    }
+    .charity-video {
+        width: 100%;
+    }
+    .charity-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
     .charity-name {
         font-size: 1.2rem;
+        text-align: center;
     }
     .charity-link {
         font-size: 0.8rem;
+        align-self: center;
     }
 }

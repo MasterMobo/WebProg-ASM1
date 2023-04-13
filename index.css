@@ -12,13 +12,25 @@
 :root {
     --header-background-color: #161b22;
     --text-color: aliceblue;
-    --border-color: rgb(64, 64, 78);
+    --border-color: rgb(64, 66, 78);
     --unhighlighted-color: rgb(100, 100, 121);
+    --shadow-color: rgb(39, 52, 68);
 }
 
 body {
     background-color: rgb(17, 18, 22);
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
 ul {
@@ -28,11 +40,4 @@ ul {
 a {
     text-decoration: none;
     color: aliceblue;
-}
-
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

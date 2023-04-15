@@ -1,14 +1,6 @@
 const fs = require("fs");
 
 const data = require("./detail-page-data");
-console.log("Starting to generate detail pages...");
-
-const processData = (data) => {
-    for (let i = 0; i < data.length; i++) {
-        const pageData = data[i];
-        genDetailPage(pageData);
-    }
-};
 
 const makeBreadcrumb = (breadcrumbData) => {
     const { breadcrumb_name, breadcrumb_link } = breadcrumbData;
@@ -22,10 +14,25 @@ const makeBreadcrumb = (breadcrumbData) => {
     return breadcrumb;
 };
 
-console.log(makeBreadcrumb(data[0]));
+const makeSubImgs = (subImgs) => {
+    let subImgsHTML = "";
+    for (let i = 0; i < subImgs.length; i++) {
+        subImgsHTML += `<img src="${subImgs[i]}" alt="sub_img" />\n`;
+    }
+    return subImgsHTML;
+};
 
-const genDetailPage = (pageData) => {
-    const { file_name, title, author, desc, cover_img, sub_imgs } = pageData;
+const makeDescrtiption = (descriptions) => {
+    let descriptionHTML = "";
+    for (let i = 0; i < descriptions.length; i++) {
+        descriptionHTML += `<p class="book-desc">${descriptions[i]}</p>\n`;
+    }
+    return descriptionHTML;
+};
+
+const createPageHTML = (pageData) => {
+    const { file_name, title, author, desc, cover_img, sub_imgs, price } =
+        pageData;
     const page = `<!DOCTYPE html>
     <html lang="en">
         <head>
@@ -82,66 +89,33 @@ const genDetailPage = (pageData) => {
             <!-- Main Content -->
             <main>
                 <!-- Breadcumb -->
-                <p class="breadcrumb">Home > Fiction > Dune</p>
-    
+                <div class="breadcrumb">
+                ${makeBreadcrumb(pageData)}
+                </div>
+                
                 <div class="book-wrapper">
                     <!-- Images -->
                     <section class="images">
                         <img
-                            src="../../images/books/dune.jpg"
+                            src=${cover_img}
                             alt="cover"
                             id="main-image"
                         />
                         <div class="sub-images">
-                            <img
-                                src="../../images/books/dune-sub1.png"
-                                alt="cover"
-                            />
-                            <img
-                                src="../../images/books/dune-sub2.png"
-                                alt="cover"
-                            />
-                            <img
-                                src="../../images/books/dune-sub3.png"
-                                alt="cover"
-                            />
+                            ${makeSubImgs(sub_imgs)}
                         </div>
                     </section>
     
                     <!-- Book Details -->
                     <section class="detail">
                         <div class="book-name-author">
-                            <h1 class="book-name">Dune</h1>
+                            <h1 class="book-name">${title}</h1>
                             <p class="name-seperator">-</p>
-                            <h2 class="book-author">Frank Herbert</h2>
+                            <h2 class="book-author">${author}</h2>
                         </div>
                         <a class="show-more" href="#!">Show more</a>
-                        <p class="book-desc">
-                            Set on the desert planet Arrakis, Dune is the story of
-                            the boy Paul Atreides, heir to a noble family tasked
-                            with ruling an inhospitable world where the only thing
-                            of value is the “spice” melange, a drug capable of
-                            extending life and enhancing consciousness. Coveted
-                            across the known universe, melange is a prize worth
-                            killing for....
-                        </p>
-                        <p class="book-desc">
-                            When House Atreides is betrayed, the destruction of
-                            Paul’s family will set the boy on a journey toward a
-                            destiny greater than he could ever have imagined. And as
-                            he evolves into the mysterious man known as Muad’Dib, he
-                            will bring to fruition humankind’s most ancient and
-                            unattainable dream.
-                        </p>
-                        <p class="book-desc">
-                            When House Atreides is betrayed, the destruction of
-                            Paul’s family will set the boy on a journey toward a
-                            destiny greater than he could ever have imagined. And as
-                            he evolves into the mysterious man known as Muad’Dib, he
-                            will bring to fruition humankind’s most ancient and
-                            unattainable dream.
-                        </p>
-                        <h2 class="price">$21.67</h2>
+                        ${makeDescrtiption(desc)}
+                        <h2 class="price">${price}</h2>
                         <a href="#!" class="add-to-cart">
                             Add to Cart
                             <img
@@ -169,4 +143,24 @@ const genDetailPage = (pageData) => {
         </body>
     </html>
     `;
+
+    return page;
 };
+const processData = (data) => {
+    for (let i = 0; i < data.length; i++) {
+        const pageData = data[i];
+        const pageHTML = createPageHTML(pageData);
+        // Write the HTML file to the ./output/book-detail-pages folder
+        fs.writeFileSync(
+            `./output/book-detail-pages/${pageData.file_name}.html`,
+            pageHTML
+        );
+    }
+};
+
+const start = () => {
+    console.log("Generating detail pages...");
+    processData(data);
+    console.log("Detail pages generated successfully!");
+};
+start();

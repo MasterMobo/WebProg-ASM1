@@ -151,6 +151,10 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+    .book-wrapper {
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 30px;
+    }
     #main-image {
         object-fit: contain;
         width: 80vw;

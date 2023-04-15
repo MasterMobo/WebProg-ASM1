@@ -4,8 +4,23 @@ main {
 
 .breadcrumb {
     margin: 20px 0;
+    display: flex;
+    gap: 0.5rem;
+}
+.breadcrumb a,
+.breadcrumb p {
     color: var(--unhighlighted-color);
     font-weight: 500;
+}
+
+.breadcrumb p {
+    /* Disable select text */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.breadcrumb a:hover {
+    color: var(--highlighted-color);
 }
 .book-wrapper {
     display: flex;

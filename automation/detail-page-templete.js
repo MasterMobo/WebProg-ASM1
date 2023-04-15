@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -54,13 +54,7 @@
         <!-- Main Content -->
         <main>
             <!-- Breadcumb -->
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a>
-                <p>></p>
-                <a href="../genres.html">Genres</a>
-                <p>></p>
-                <a href="#!">Dune</a>
-            </div>
+            <p class="breadcrumb">Home > Fiction > Dune</p>
 
             <div class="book-wrapper">
                 <!-- Images -->
@@ -146,3 +140,4 @@
         </footer>
     </body>
 </html>
+`;

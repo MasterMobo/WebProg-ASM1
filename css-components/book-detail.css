@@ -7,6 +7,7 @@ main {
     display: flex;
     gap: 0.5rem;
 }
+
 .breadcrumb a,
 .breadcrumb p {
     color: var(--unhighlighted-color);
@@ -48,6 +49,7 @@ main {
     border: 1px solid var(--border-color);
     transition: all 0.2s ease;
     box-shadow: 0 0 20px 2px rgb(39, 52, 68);
+    background-color: white;
 }
 
 #main-image:hover {
@@ -63,7 +65,10 @@ main {
 }
 
 .sub-images img {
+    background-color: white;
+    object-fit: contain;
     width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 5px;
     border: 1px solid var(--border-color);
     transition: all 0.2s ease;
@@ -131,11 +136,6 @@ main {
     margin-bottom: 5px;
 }
 
-.name-seperator {
-    font-size: 2rem;
-    display: none;
-}
-
 .book-author {
     font-family: "Roboto Slab", "serif";
     font-style: italic;
@@ -155,11 +155,6 @@ main {
         border-bottom: 2px solid var(--border-color);
         padding-bottom: 30px;
     }
-    #main-image {
-        object-fit: contain;
-        width: 80vw;
-        height: 40vw;
-    }
 
     .detail {
         align-self: center;
@@ -167,32 +162,32 @@ main {
         width: 100%;
     }
 
-    .book-name-author {
-        display: flex;
-        align-items: baseline;
-        gap: 10px;
-        align-self: center;
-        border-bottom: 2px solid var(--border-color);
-        margin-bottom: 10px;
-    }
-    .name-seperator {
-        display: block;
-    }
     .book-name {
+        width: 80vw;
         font-size: 1.7rem;
+        text-align: center;
     }
     .book-author {
         border-bottom: none;
         font-size: 1.4rem;
     }
+    #main-image {
+        object-fit: contain;
+        width: 80vw;
+        height: 40vw;
+        align-self: center;
+    }
     .images {
         flex-direction: column;
+        align-items: center;
     }
     .sub-images {
         flex-direction: row;
+        width: 80vw;
     }
     .sub-images img {
         width: 26vw;
+        height: 15vh;
     }
     .book-wrapper {
         flex-direction: column;
@@ -219,16 +214,5 @@ main {
     .show-more:hover ~ .book-desc {
         width: 80vw;
         display: block;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .book-name-author {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-    .name-seperator {
-        display: none;
     }
 }

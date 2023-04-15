@@ -1,39 +1,4 @@
-const fs = require("fs");
-
-const data = require("./detail-page-data");
-
-const makeBreadcrumb = (breadcrumbData) => {
-    const { breadcrumb_name, breadcrumb_link } = breadcrumbData;
-    let breadcrumb = "";
-    for (let i = 0; i < breadcrumb_name.length; i++) {
-        breadcrumb += `<a href="${breadcrumb_link[i]}">${breadcrumb_name[i]}</a>\n`;
-        if (i !== breadcrumb_name.length - 1) {
-            breadcrumb += "<p>></p>\n";
-        }
-    }
-    return breadcrumb;
-};
-
-const makeSubImgs = (subImgs) => {
-    let subImgsHTML = "";
-    for (let i = 0; i < subImgs.length; i++) {
-        subImgsHTML += `<img src="${subImgs[i]}" alt="sub_img" />\n`;
-    }
-    return subImgsHTML;
-};
-
-const makeDescrtiption = (descriptions) => {
-    let descriptionHTML = "";
-    for (let i = 0; i < descriptions.length; i++) {
-        descriptionHTML += `<p class="book-desc">${descriptions[i]}</p>\n`;
-    }
-    return descriptionHTML;
-};
-
-const createPageHTML = (pageData) => {
-    const { file_name, title, author, desc, cover_img, sub_imgs, price } =
-        pageData;
-    const page = `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
         <head>
             <meta charset="UTF-8" />
@@ -90,29 +55,42 @@ const createPageHTML = (pageData) => {
             <main>
                 <!-- Breadcumb -->
                 <div class="breadcrumb">
-                ${makeBreadcrumb(pageData)}
+                <a href="../../index.html">Home</a>
+<p>></p>
+<a href="../best-sellers.html">Best Sellers</a>
+<p>></p>
+<a href="#!">Egghead</a>
+
                 </div>
                 
                 <div class="book-wrapper">
                     <!-- Images -->
                     <section class="images">
                         <img
-                            src=${cover_img}
+                            src=../../images/books/egghead.jpg
                             alt="cover"
                             id="main-image"
                         />
                         <div class="sub-images">
-                            ${makeSubImgs(sub_imgs)}
+                            <img src="../../images/books/egghead-sub1.jpg" alt="sub_img" />
+<img src="../../images/books/egghead-sub2.jpg" alt="sub_img" />
+<img src="../../images/books/egghead-sub3.jpg" alt="sub_img" />
+
                         </div>
                     </section>
     
                     <!-- Book Details -->
                     <section class="detail">
-                            <h1 class="book-name">${title}</h1>
-                            <h2 class="book-author">${author}</h2>
+                            <h1 class="book-name">Egghead: Or, You Can't Survive on Ideas Alone</h1>
+                            <h2 class="book-author">Bo Burnham</h2>
                         <a class="show-more" href="#!">Show more</a>
-                        ${makeDescrtiption(desc)}
-                        <h2 class="price">$${price}</h2>
+                        <p class="book-desc">The bestselling strange and charming collection of hilariously absurd poetry, writing, and illustration from the director of Eighth Grade and the writer and star of Bo Burnham: Inside.</p>
+<p class="book-desc">Bo Burnham was a precocious teenager living in his parents' attic when he started posting material on YouTube. 100 million people viewed those videos, turning Bo into an online sensation with a huge and dedicated following. Bo taped his first of two Comedy Central specials four days after his 18th birthday, making him the youngest to do so in the channel's history. Now Bo is a rising star in the comedy world, revered for his utterly original and intelligent voice. And, he can SIIIIIIIIING!
+            </p>
+<p class="book-desc">In Egghead, Bo brings his brand of brainy, emotional comedy to the page in the form of off-kilter poems, thoughts, and more. Teaming up with his longtime friend, artist, and illustrator Chance Bone, Bo takes on everything from death to farts in this weird book that will make you think, laugh and think, "why did I just laugh?"
+            </p>
+
+                        <h2 class="price">$23.61</h2>
                         <a href="#!" class="add-to-cart">
                             Add to Cart
                             <img
@@ -139,22 +117,4 @@ const createPageHTML = (pageData) => {
             </footer>
         </body>
     </html>
-    `;
-
-    return page;
-};
-const processData = (data) => {
-    for (let i = 0; i < data.length; i++) {
-        const pageData = data[i];
-        const pageHTML = createPageHTML(pageData);
-        // Write the HTML file to the ./output/book-detail-pages folder
-        fs.writeFileSync(`../pages/books/${pageData.file_name}.html`, pageHTML);
-    }
-};
-
-const start = () => {
-    console.log("Generating detail pages...");
-    processData(data);
-    console.log("Detail pages generated successfully!");
-};
-start();
+    

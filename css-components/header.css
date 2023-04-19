@@ -60,6 +60,11 @@ header {
     padding-right: 10px;
 }
 
+.search-bar:focus {
+    outline: none;
+    border: 1px solid var(--text-color);
+}
+
 .search-btn {
     height: 100%;
     aspect-ratio: 1/1;

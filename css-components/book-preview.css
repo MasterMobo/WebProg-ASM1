@@ -93,14 +93,16 @@
 }
 
 .icons {
-    align-self: center;
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    align-self: flex-start;
+    align-items: end;
+    flex: 1;
 }
 
 .icon-wrapper {
     width: 30px;
-    height: 30px;
+    aspect-ratio: 1/1;
     background-color: rgb(239, 98, 47);
     border-radius: 50%;
     display: flex;
@@ -130,6 +132,10 @@
         padding-bottom: 20px;
         margin-top: 20px;
         border-bottom: 2px solid rgb(64, 64, 78);
+    }
+    .icons {
+        align-items: start;
+        align-self: center;
     }
 }
 

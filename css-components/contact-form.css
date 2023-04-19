@@ -4,7 +4,7 @@
     margin: 25px 0;
 }
 
-form {
+#contact-form {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -30,7 +30,8 @@ form {
 /* Selects and Input fields that are not radio or checkbox */
 select,
 textarea,
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+#contact-form
+    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
     width: 50%;
     height: 30px;
     background-color: var(--background-color);
@@ -64,8 +65,8 @@ option {
     gap: 10%;
 }
 
-input[type="submit"],
-button {
+#submit-btn,
+#reset-btn {
     font-size: 1.2rem;
     font-weight: 500;
     border: none;
@@ -116,7 +117,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-    form {
+    #contact-form {
         width: 80%;
         gap: 15px;
     }
@@ -130,7 +131,8 @@ button {
         width: 100%;
     }
     select,
-    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+    #contact-form
+        input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
         width: 100%;
     }
 }

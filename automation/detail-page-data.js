@@ -23,8 +23,8 @@ const data = [
             "../../images/books/dune-sub3.png",
         ],
         price: 21.67,
-        breadcrumb_name: ["Home", "Genres", "Dune"],
-        breadcrumb_link: ["../../index.html", "../genres.html", "#!"],
+        breadcrumb_name: ["Home", "Best Sellers", "Dune"],
+        breadcrumb_link: ["../../index.html", "../best-sellers.html", "#!"],
     },
     {
         file_name: "egghead",
@@ -66,8 +66,8 @@ const data = [
             "../../images/books/american_mermaid-sub3.jpg",
         ],
         price: 14.99,
-        breadcrumb_name: ["Home", "Best Sellers", "American Mermaid"],
-        breadcrumb_link: ["../../index.html", "../best-sellers.html", "#!"],
+        breadcrumb_name: ["Home", "Special Offers", "American Mermaid"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
     },
 
     {
@@ -88,8 +88,8 @@ const data = [
             "../../images/books/above_ground-sub3.jpg",
         ],
         price: 12.99,
-        breadcrumb_name: ["Home", "Best Sellers", "Above Ground"],
-        breadcrumb_link: ["../../index.html", "../best-sellers.html", "#!"],
+        breadcrumb_name: ["Home", "Special Offers", "Above Ground"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
     },
 ];
 

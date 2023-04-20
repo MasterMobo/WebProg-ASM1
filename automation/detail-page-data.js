@@ -91,6 +91,142 @@ const data = [
         breadcrumb_name: ["Home", "Special Offers", "Above Ground"],
         breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
     },
+
+    {
+        file_name: "stars_and_smoke",
+        title: "Stars and Smoke",
+        author: "Marie Lu",
+        desc: [
+            `This smoldering enemies-to-lovers novel from #1 New York Times bestselling author Marie Lu puts a superstar global phenomenon and a hotshot young spy on a collision course with danger – and Cupid’s arrow – in an electric new series perfect for fans of Nicola Yoon and Ally Carter.`,
+            `Meet Winter Young – International pop sensation, with a voice like velvet and looks that could kill. His star power has smashed records, selling out stadiums from LA to London. His rabid fans would move heaven and earth for even a glimpse of him – just imagine what they’d do to become his latest fling.
+            `,
+            `Romance and danger abound in this “brilliant, breathtaking ride that will leave you clamoring for the sequel.” —Tahereh Mafi, #1 internationally bestselling author of Shatter Me .
+            `,
+        ],
+        cover_img: "../../images/books/stars_and_smoke.jpg",
+        sub_imgs: [
+            "../../images/books/stars_and_smoke-sub1.webp",
+            "../../images/books/stars_and_smoke-sub2.webp",
+            "../../images/books/stars_and_smoke-sub3.webp",
+        ],
+        price: 13.99,
+        breadcrumb_name: ["Home", "Special Offers", "Stars and Smoke"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
+    },
+
+    {
+        file_name: "when_the_sakura_bloom",
+        title: "When the Sakura Bloom",
+        author: "Narisa Togo",
+        desc: [
+            `“An understated ode to an iconic Japanese cultural celebration, mindfulness, and the restorative power of the seasons.”Kirkus Reviews`,
+            `"Well suited to reading aloud, the concise text works well with the precise, delicate artwork, subtly encouraging viewers to slow down occasionally and enjoy fleeting moments of natural beauty." Booklist
+            `,
+            `When the Sakura Bloom by Nariso Togo sheds light on the cultural significance of cherry blossom season in Japan, and an insight into the unique mindset of its people. Through subtle text and gentle imagery readers will see the importance of slowing down to appreciate the moment. That comfort, not despair, can be found in the inevitable cycles of the seasons. How change can usher in opportunities and rejuvenation.
+            `,
+            `Moreover, When the Sakura Bloom is an understated illustration of the importance of celebrating the fleeting, delicate beauty of nature and the metaphor this represents for life itself.
+            `,
+        ],
+        cover_img: "../../images/books/when-the-sakura-bloom.jpg",
+        sub_imgs: [
+            "../../images/books/when_the_sakura_bloom-sub1.jpeg",
+            "../../images/books/when_the_sakura_bloom-sub2.jpeg",
+            "../../images/books/when_the_sakura_bloom-sub3.jpeg",
+        ],
+        price: 16.34,
+        breadcrumb_name: ["Home", "Special Offers", "When the Sakura Bloom"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
+    },
+
+    {
+        file_name: "peach_blossom_spring",
+        title: "Peach Blossom Spring",
+        author: "Melissa Fu",
+        desc: [
+            `"Within every misfortune there is a blessing and within every blessing, the seeds of misfortune, and so it goes, until the end of time."`,
+            `It is 1938 in China and, as a young wife, Meilin’s future is bright. But with the Japanese army approaching, Meilin and her four year old son, Renshu, are forced to flee their home. Relying on little but their wits and a beautifully illustrated hand scroll, filled with ancient fables that offer solace and wisdom, they must travel through a ravaged country, seeking refuge.
+            `,
+            `Years later, Renshu has settled in America as Henry Dao. Though his daughter is desperate to understand her heritage, he refuses to talk about his childhood. How can he keep his family safe in this new land when the weight of his history threatens to drag them down? Yet how can Lily learn who she is if she can never know her family’s story?
+            `,
+            `Spanning continents and generations, Peach Blossom Spring is a bold and moving look at the history of modern China, told through the story of one family. It’s about the power of our past, the hope for a better future, and the haunting question: What would it mean to finally be home?
+            `,
+        ],
+        cover_img: "../../images/books/peach-blossom-spring.jpg",
+        sub_imgs: [
+            "../../images/books/peach_blossom_spring-sub1.jpeg",
+            "../../images/books/peach_blossom_spring-sub2.jpg",
+            "../../images/books/peach_blossom_spring-sub3.png",
+        ],
+        price: 21.04,
+        breadcrumb_name: ["Home", "Special Offers", "Peach Blossom Spring"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
+    },
+
+    {
+        file_name: "vegan_japaneasy",
+        title: "Vegan JapanEasy: Over 80 Delicious Plant-Based Japanese Recipes",
+        author: "Tim Anderson",
+        desc: [
+            `Believe it or not, Japanese cuisine in general is actually quite vegan-friendly, and many dishes can be made vegan with just a simple substitution or two.`,
+            `You can enjoy the same big, bold, salty-sweet-spicy-rich-umami recipes of modern Japanese soul food without so much as glancing down the meat and dairy aisles. And best of all, it's super-easy to make!
+            `,
+            `In Vegan JapanEasy, Tim Anderson taps into Japan's rich culture of cookery that's already vegan or very nearly vegan, so there are no sad substitutes and zero shortcomings on taste. From classics like Vegetable Tempura, Onigiri, Mushroom Gyoza and Fried Tofu in Dashi, to clever vegan conversions including Cauliflower Katsu Curry, French Onion Ramen and Sichuan-Style Hot and Numbing Tofu with Ancient Grains, you don't need to be vegan to enjoy these tasty recipes. Add to that some outrageously good drinks and desserts, like the Watermelon Mojito and Soy Sauce Butterscotch Brownies, and you'll be spoilt for choice!
+            `,
+            `With ingredients like tangy miso, savory shiitake mushrooms and zingy ponzu, to name a few, who needs meat? So if you're new to veganism, new to Japanese cooking, new to both, or you just want to expand your meat-free repertoire, this is the book for you!
+            `,
+        ],
+        cover_img: "../../images/books/vegan-japaneasy.jpg",
+        sub_imgs: [
+            "../../images/books/vegan_japaneasy-sub1.jpeg",
+            "../../images/books/vegan_japaneasy-sub2.jpeg",
+            "../../images/books/vegan_japaneasy-sub3.jpeg",
+        ],
+        price: 25.45,
+        breadcrumb_name: ["Home", "Special Offers", "Vegan JapanEasy"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
+    },
+
+    {
+        file_name: "when_grandma_gives_you_a_lemon_tree",
+        title: "When Grandma Gives You a Lemon Tree",
+        author: "Jamie L.B. Deenihan (Author), Lorraine Rocha (Illustrator)",
+        desc: [
+            `When Grandma gives you a lemon tree, definitely don’t make a face! Care for the tree, and you might be surprised at how new things, and new ideas, bloom.`,
+            `“Charms from cover to cover.” —Kirkus (Starred review) 
+            `,
+            `“When life gives you lemons, make lemonade.” In this imaginative take on that popular saying, a child is surprised (and disappointed) to receive a lemon tree from Grandma for her birthday. After all, she DID ask for a new gadget! But when she follows the narrator’s careful—and funny—instructions, she discovers that the tree might be exactly what she wanted after all. This clever story, complete with a recipe for lemonade, celebrates the pleasures of patience, hard work, nature, community . . . and putting down the electronic devices just for a while.
+            `,
+        ],
+        cover_img: "../../images/books/when-grandma-gives-you-a-lemon-tree.jpg",
+        sub_imgs: [
+            "../../images/books/when-grandma-gives-you-a-lemon-tree-sub1.jpg",
+            "../../images/books/when-grandma-gives-you-a-lemon-tree-sub2.jpeg",
+            "../../images/books/when-grandma-gives-you-a-lemon-tree-sub3.jpeg",
+        ],
+        price: 14.35,
+        breadcrumb_name: ["Home", "Special Offers", "When Grandma..."],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
+    },
+
+    {
+        file_name: "ambitious-girl",
+        title: "Ambitious Girl",
+        author: "Meena Harris (Author), Marissa Valdez (Illustrator)",
+        desc: [
+            `Anyone who's ever been underestimated or overshadowed will find inspiration in this empowering new picture book from Meena Harris, New York Times-bestselling author of Kamala and Maya's Big Idea.
+            `,
+            `When a young girl sees a strong woman on TV labeled as "too assertive" and "too ambitious," it sends her on a journey of discovery through past, present, and future about the challenges faced by women and girls and the ways in which they can reframe, redefine, and reclaim words meant to knock them down.`,
+        ],
+        cover_img: "../../images/books/ambitious-girl.jpg",
+        sub_imgs: [
+            "../../images/books/ambitious-girl-sub1.jpeg",
+            "../../images/books/ambitious-girl-sub2.jpeg",
+            "../../images/books/ambitious-girl-sub3.jpeg",
+        ],
+        price: 12.61,
+        breadcrumb_name: ["Home", "Special Offers", "Ambitious Girl"],
+        breadcrumb_link: ["../../index.html", "../special-offers.html", "#!"],
+    },
 ];
 
 module.exports = data;

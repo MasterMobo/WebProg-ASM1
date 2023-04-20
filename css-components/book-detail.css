@@ -159,7 +159,7 @@ main {
     .detail {
         align-self: center;
         align-items: center;
-        width: 100%;
+        width: 80%;
     }
 
     .book-name {

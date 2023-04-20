@@ -17,7 +17,7 @@ header {
     width: 70px;
 }
 
-/* Effect coutesy of https://stackoverflow.com/questions/54783325/how-can-i-style-the-first-letter-and-apply-this-linear-gradient-animation */
+/* Effect courtesy of https://stackoverflow.com/questions/54783325/how-can-i-style-the-first-letter-and-apply-this-linear-gradient-animation */
 .logo h1 {
     background-clip: text;
     -webkit-background-clip: text;

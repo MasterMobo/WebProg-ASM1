@@ -23,8 +23,8 @@
     color: aliceblue;
 }
 
+/* Effect courtesy of https://stackoverflow.com/questions/54783325/how-can-i-style-the-first-letter-and-apply-this-linear-gradient-animation */
 .category-name {
-    /* white-space: nowrap; */
     margin-bottom: 10px;
     background-clip: text;
     -webkit-background-clip: text;

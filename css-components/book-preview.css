@@ -58,16 +58,24 @@
     font-family: "Roboto Slab", "serif";
     font-weight: 300;
     font-size: 1.3rem;
+    height: 30px;
     text-align: center;
     border-radius: 20px;
     border: aliceblue 1px solid;
-    transition: all ease-in-out 200ms;
+    transition: all ease-out 300ms;
     margin-bottom: 5px;
 }
 
+/* Hide orginal price on hover */
 .book-price:hover {
+    font-size: 0;
     background-color: aliceblue;
     color: black;
+}
+
+/* Add "Shop Now!" message to element on hover */
+.book-price:hover:after {
+    font-size: 1.3rem;
     content: "Shop Now!";
 }
 

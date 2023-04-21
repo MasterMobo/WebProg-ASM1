@@ -25,10 +25,13 @@
     display: flex;
     gap: 40px;
     width: 100%;
-
     margin-top: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid rgb(64, 64, 78);
+}
+
+.charity:last-child {
+    border-bottom: none;
 }
 
 .charity-video {

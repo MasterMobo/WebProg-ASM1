@@ -16,6 +16,10 @@
     width: 80%;
 }
 
+.category:last-child {
+    border-bottom: none;
+}
+
 .default-category-name {
     font-size: 2.2rem;
     font-weight: 700;

@@ -1,5 +1,6 @@
 main {
     height: 100%;
+    padding-bottom: 50px;
 }
 
 .breadcrumb {
@@ -155,12 +156,15 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+    main {
+        padding-bottom: 0;
+    }
     .breadcrumb a,
     .breadcrumb p {
         font-size: 0.8rem;
     }
     .book-wrapper {
-        border-bottom: 2px solid var(--border-color);
+        border-bottom: none;
         padding-bottom: 30px;
     }
 

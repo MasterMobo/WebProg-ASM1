@@ -1,10 +1,12 @@
 footer {
     width: 100%;
     margin-top: auto;
+    border-top: 1px solid var(--border-color);
+    background-image: linear-gradient(to bottom, #11161e, #0d0601 85%);
 }
 
 footer nav {
-    height: 100px;
+    height: 80px;
 }
 
 footer nav ul {
@@ -19,6 +21,7 @@ footer nav li {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 
 footer nav a {

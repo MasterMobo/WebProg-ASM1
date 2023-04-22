@@ -1,3 +1,14 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Bui Dang Khoa
+ID: s3978482
+
+This contains the CSS for the detailed book page.
+*/
+
 main {
     height: 100%;
     padding-bottom: 50px;
@@ -59,7 +70,7 @@ main {
 
 #main-image:hover {
     transform: scale(1.05);
-    border: 1px solid orangered;
+    border: 1px solid var(--main-orange);
 }
 
 .sub-images {
@@ -82,7 +93,7 @@ main {
 
 .sub-images img:hover {
     transform: scale(1.1);
-    border: 1px solid orangered;
+    border: 1px solid var(--main-orange);
 }
 
 .price {
@@ -101,7 +112,7 @@ main {
     font-size: 1.8rem;
     font-weight: 500;
     align-self: flex-start;
-    background-color: orangered;
+    background-color: var(--main-orange);
     border: none;
     padding: 10px;
     border-radius: 10px;

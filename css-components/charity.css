@@ -1,3 +1,14 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Bui Dang Khoa
+ID: s3978482
+
+This contains the CSS for the charity section.
+*/
+
 .charity-section {
     width: 80%;
     display: flex;
@@ -80,9 +91,15 @@
     display: block;
     align-self: flex-start;
     padding: 10px;
-    background-color: orangered;
+    background-color: var(--main-orange);
     border-radius: 20px;
     text-align: center;
+    transition: all ease-in-out 200ms;
+}
+
+.charity-link:hover {
+    background-color: var(--text-color);
+    color: black;
 }
 @media screen and (max-width: 768px) {
     .charity {

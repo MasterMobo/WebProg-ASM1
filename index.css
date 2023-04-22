@@ -1,3 +1,14 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Bui Dang Khoa
+ID: s3978482
+
+This contains the global CSS that is applied to every page.
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto+Slab:wght@200;300;400&display=swap");
 
 * {
@@ -15,6 +26,7 @@
     --border-color: rgb(64, 66, 78);
     --unhighlighted-color: rgb(100, 100, 121);
     --shadow-color: rgb(39, 52, 68);
+    --main-orange: rgb(248, 83, 23);
 }
 
 body {

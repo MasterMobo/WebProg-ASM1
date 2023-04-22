@@ -1,3 +1,12 @@
+// RMIT University Vietnam
+// Course: COSC2430 Web Programming
+// Semester: 2023A
+// Assessment: Assignment 1
+// Author: Bui Dang Khoa
+// ID: s3978482
+
+// This file contains data for all detail pages
+
 const data = [
     {
         file_name: "american_mermaid",

@@ -1,3 +1,14 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Bui Dang Khoa
+ID: s3978482
+
+This contains the CSS for the header.
+*/
+
 header {
     width: 100%;
     position: relative;
@@ -25,7 +36,7 @@ header {
     background-image: linear-gradient(
         to right,
         #8b73f6,
-        #ec6328 50%,
+        rgb(248, 83, 23) 50%,
         aliceblue 50%
     );
     background-size: 200% 100%;

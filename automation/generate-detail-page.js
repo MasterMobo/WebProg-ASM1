@@ -1,5 +1,14 @@
-const fs = require("fs");
+// RMIT University Vietnam
+// Course: COSC2430 Web Programming
+// Semester: 2023A
+// Assessment: Assignment 1
+// Author: Bui Dang Khoa
+// ID: s3978482
 
+// This file is used to generate detail page for each book. It reads the data from detail-page-data.js and generates the HTML for each book. The HTML is then saved in the pages/books directory.
+// NOTE: This file is not used in the final product (i.e. it is not used for rendering on the browser)
+
+const fs = require("fs");
 const data = require("./detail-page-data");
 
 const makeBreadcrumb = (breadcrumbData) => {
@@ -33,7 +42,16 @@ const makeDescrtiption = (descriptions) => {
 const createPageHTML = (pageData) => {
     const { file_name, title, author, desc, cover_img, sub_imgs, price } =
         pageData;
-    const page = `<!DOCTYPE html>
+    const page = `
+    <!-- 
+        RMIT University Vietnam
+        Course: COSC2430 Web Programming
+        Semester: 2023A
+        Assessment: Assignment 1
+        Author: Bui Dang Khoa
+        ID: s3978482
+    -->
+    <!DOCTYPE html>
     <html lang="en">
         <head>
             <meta charset="UTF-8" />

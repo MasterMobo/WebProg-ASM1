@@ -1,5 +1,13 @@
-/* This is the formatting for the book preview (in category page)
- NOT the detailed page of the book */
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Bui Dang Khoa
+ID: s3978482
+
+This contains the CSS for the book preview (in category page) NOT the detailed page of the book.
+*/
 
 .book-list {
     display: flex;
@@ -111,7 +119,7 @@
 .icon-wrapper {
     width: 30px;
     aspect-ratio: 1/1;
-    background-color: rgb(239, 98, 47);
+    background-color: var(--main-orange);
     border-radius: 50%;
     display: flex;
     justify-content: center;

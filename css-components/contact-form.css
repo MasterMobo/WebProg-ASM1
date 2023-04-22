@@ -1,3 +1,14 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Bui Dang Khoa
+ID: s3978482
+
+This contains the CSS for the contact form.
+*/
+
 #page-title {
     font-size: 2rem;
     font-weight: 500;
@@ -81,7 +92,7 @@ option {
 }
 
 #submit-btn {
-    background-color: orangered;
+    background-color: var(--main-orange);
 }
 
 #submit-btn:hover {

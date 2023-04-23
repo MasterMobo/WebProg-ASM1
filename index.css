@@ -19,6 +19,7 @@ This contains the global CSS that is applied to every page.
     font-weight: 300;
     color: aliceblue;
 }
+
 /* Global Variables */
 :root {
     --header-background-color: #161b22;
@@ -42,7 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    flex: 1; /* This is to make the footer stick to the bottom */
     margin-bottom: 50px;
 }
 

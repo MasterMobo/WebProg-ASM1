@@ -53,8 +53,7 @@ This contains the CSS for the categories.
     margin-bottom: 20px;
 }
 
-/* Custom color schemes*/
-
+/* Custom color schemes for scrolling gradients*/
 .icy-mint {
     background-image: linear-gradient(
         to right,
@@ -97,14 +96,8 @@ This contains the CSS for the categories.
     background-position: 0%;
 }
 
-/* Full gradient (without scroll) */
-.full-gradient {
-    background-position: 0%;
-}
-
-/* Moving Gradients  */
-
-@keyframes rotate-gradient {
+/* Moving Gradients (Without scroll) */
+@keyframes move-gradient {
     from {
         background-position: 0%;
     }
@@ -136,7 +129,7 @@ This contains the CSS for the categories.
 }
 
 .moving-gradient {
-    animation-name: rotate-gradient;
+    animation-name: move-gradient;
     animation-duration: 3s;
     animation-direction: alternate;
     animation-iteration-count: infinite;

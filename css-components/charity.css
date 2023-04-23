@@ -101,6 +101,7 @@ This contains the CSS for the charity section.
     background-color: var(--text-color);
     color: black;
 }
+
 @media screen and (max-width: 768px) {
     .charity {
         gap: 10px;

@@ -1,4 +1,5 @@
-<!-- 
+
+    <!-- 
         RMIT University Vietnam
         Course: COSC2430 Web Programming
         Semester: 2023A
@@ -6,167 +7,139 @@
         Author: Bui Dang Khoa
         ID: s3978482
     -->
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Odyssey: Buy Books, Fiction, Novels</title>
-        <link rel="icon" href="../../images/boat.png" />
-
-        <!-- Main stylesheet -->
-        <link rel="stylesheet" href="../../index.css" />
-
-        <!-- CSS Components -->
-        <link rel="stylesheet" href="../../css-components/header.css" />
-        <link rel="stylesheet" href="../../css-components/footer.css" />
-        <link rel="stylesheet" href="../../css-components/book-detail.css" />
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <!-- Logo -->
-            <a href="../../index.html" class="logo">
-                <img src="../../images/boat.png" alt="logo" />
-                <h1>Odyssey</h1>
-            </a>
-
-            <!-- Search Bar -->
-            <form action="" class="search-field">
-                <input type="text" class="search-bar" placeholder="Search" />
-                <button type="submit" class="search-btn">
-                    <img src="../../images/icons/search.png" alt="search" />
-                </button>
-            </form>
-
-            <!-- Nav Bar -->
-            <img
-                src="../../images/icons/menu.png"
-                alt="menu-bar"
-                id="menu-bar"
-            />
-            <nav id="navbar">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../special-offers.html">Special Offers</a></li>
-                    <li><a href="../best-sellers.html">Best Sellers</a></li>
-                    <li><a href="../new-releases.html">New Releases</a></li>
-                    <li><a href="../genres.html">Genres</a></li>
-                </ul>
-            </nav>
-
-            <!-- User and Cart icons -->
-            <div class="user-cart">
-                <a class="cart" href="#!">
-                    <img src="../../images/icons/white-cart2.png" alt="cart" />
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Odyssey: Buy Books, Fiction, Novels</title>
+            <link rel="icon" href="../../images/boat.png" />
+    
+            <!-- Main stylesheet -->
+            <link rel="stylesheet" href="../../index.css" />
+    
+            <!-- CSS Components -->
+            <link rel="stylesheet" href="../../css-components/header.css" />
+            <link rel="stylesheet" href="../../css-components/footer.css" />
+            <link rel="stylesheet" href="../../css-components/book-detail.css" />
+        </head>
+        <body>
+            <!-- Header -->
+            <header>
+                <!-- Logo -->
+                <a href="../../index.html" class="logo">
+                    <img src="../../images/boat.png" alt="logo" />
+                    <h1>Odyssey</h1>
                 </a>
-                <a class="user" href="#!">
-                    <img src="../../images/icons/user-icon.png" alt="user" />
-                </a>
-            </div>
-        </header>
 
-        <!-- Main Content -->
-        <main>
-            <!-- Breadcumb -->
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a>
-                <p>></p>
-                <a href="../new-releases.html">New Releases</a>
-                <p>></p>
-                <a href="#!">A Living Remedy</a>
-            </div>
-
-            <div class="book-wrapper">
-                <!-- Images -->
-                <section class="images">
-                    <img src=../../images/books/a_living_remedy.jpg alt="cover"
-                    id="main-image" />
-                    <div class="sub-images">
-                        <img
-                            src="../../images/books/a_living_remedy-sub1.webp"
-                            alt="sub_img"
-                        />
-                        <img
-                            src="../../images/books/a_living_remedy-sub2.webp"
-                            alt="sub_img"
-                        />
-                        <img
-                            src="../../images/books/a_living_remedy-sub3.jpg"
-                            alt="sub_img"
-                        />
-                    </div>
-                </section>
-
-                <!-- Book Details -->
-                <section class="detail">
-                    <h1 class="book-name">A Living Remedy: A Memoir</h1>
-                    <h2 class="book-author">Nicole Chung</h2>
-                    <a class="show-more" href="#!">Show more</a>
-                    <p class="book-desc">
-                        From the bestselling author of ALL YOU CAN EVER KNOW
-                        comes a searing memoir of family, class and grief—a
-                        daughter’s search to understand the lives her adoptive
-                        parents led, the life she forged as an adult, and the
-                        lives she’s lost.
-                    </p>
-                    <p class="book-desc">
-                        Nicole Chung couldn’t hightail it out of her
-                        overwhelmingly white Oregon hometown fast enough. As a
-                        scholarship student at a private university on the East
-                        Coast, no longer the only Korean she knew, she found
-                        community and a path to the life she'd long wanted. But
-                        the middle class world she begins to raise a family in –
-                        where there are big homes, college funds, nice vacations
-                        – looks very different from the middle class world she
-                        thought she grew up in, where paychecks have to stretch
-                        to the end of the week, health insurance is often
-                        lacking, and there are no safety nets.
-                    </p>
-                    <p class="book-desc">
-                        When her father dies at only sixty-seven, killed by
-                        diabetes and kidney disease, Nicole feels deep grief as
-                        well as rage, knowing that years of precarity and lack
-                        of access to healthcare contributed to his early death.
-                        And then the unthinkable happens – less than a year
-                        later, her beloved mother is diagnosed with cancer, and
-                        the physical distance between them becomes
-                        insurmountable as COVID-19 descends upon the world.
-                    </p>
-                    <p class="book-desc">
-                        Exploring the enduring strength of family bonds in the
-                        face of hardship and tragedy, A Living Remedy examines
-                        what it takes to reconcile the distance between one
-                        life, one home, and another – and sheds needed light on
-                        some of the most persistent and grievous inequalities in
-                        American society.
-                    </p>
-
-                    <h2 class="price">$26.89</h2>
-                    <a href="#!" class="add-to-cart">
-                        Add to Cart
-                        <img
-                            class="cart-icon"
-                            src="../../images/icons/white-cart2.png"
-                            alt=""
-                        />
+                <!-- Search Bar -->
+                <form action="" class="search-field">
+                    <input type="text" class="search-bar" placeholder="Search" />
+                    <button type="submit" class="search-btn">
+                        <img src="../../images/icons/search.png" alt="search" />
+                    </button>
+                </form>
+    
+                <!-- Nav Bar -->
+                <img
+                    src="../../images/icons/menu.png"
+                    alt="menu-bar"
+                    id="menu-bar"
+                />
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../special-offers.html">Special Offers</a></li>
+                        <li><a href="../best-sellers.html">Best Sellers</a></li>
+                        <li><a href="../new-releases.html">New Releases</a></li>
+                        <li><a href="../genres.html">Genres</a></li>
+                    </ul>
+                </nav>
+    
+                <!-- User and Cart icons -->
+                <div class="user-cart">
+                    <a class="cart" href="#!">
+                        <img src="../../images/icons/white-cart2.png" alt="cart" />
                     </a>
-                </section>
-            </div>
-        </main>
+                    <a class="user" href="#!">
+                        <img src="../../images/icons/user-icon.png" alt="user" />
+                    </a>
+                </div>
+            </header>
+    
+            <!-- Main Content -->
+            <main>
+                <!-- Breadcumb -->
+                <div class="breadcrumb">
+                <a href="../../index.html">Home</a>
+<p>></p>
+<a href="../new-releases.html">New Releases</a>
+<p>></p>
+<a href="#!">A Living Remedy</a>
 
-        <!-- Footer -->
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#!">About Us</a></li>
-                    <li><a href="#!">Privacy Policy</a></li>
-                    <li><a href="#!">Terms</a></li>
-                    <li><a href="#!">Copyright</a></li>
-                    <li><a href="../contact-us.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
-</html>
+                </div>
+                
+                <div class="book-wrapper">
+                    <!-- Images -->
+                    <section class="images">
+                        <img
+                            src=../../images/books/a_living_remedy.jpg
+                            alt="cover"
+                            id="main-image"
+                        />
+                        <div class="sub-images">
+                            <img src="../../images/books/a_living_remedy-sub1.webp" alt="sub_img" />
+<img src="../../images/books/a_living_remedy-sub2.webp" alt="sub_img" />
+<img src="../../images/books/a_living_remedy-sub3.jpg" alt="sub_img" />
+
+                        </div>
+                    </section>
+    
+                    <!-- Book Details -->
+                    <section class="detail">
+                            <h1 class="book-name">A Living Remedy: A Memoir</h1>
+                            <h2 class="book-author">Nicole Chung</h2>
+                        <a class="show-more" href="#!">Show more</a>
+                        <p class="book-desc">From the bestselling author of ALL YOU CAN EVER KNOW comes a searing memoir of family, class and grief—a daughter’s search to understand the lives her adoptive parents led, the life she forged as an adult, and the lives she’s lost.
+            </p>
+<p class="book-desc"> Nicole Chung couldn’t hightail it out of her overwhelmingly white Oregon hometown fast enough. As a scholarship student at a private university on the East Coast, no longer the only Korean she knew, she found community and a path to the life she'd long wanted. But the middle class world she begins to raise a family in – where there are big homes, college funds, nice vacations – looks very different from the middle class world she thought she grew up in, where paychecks have to stretch to the end of the week, health insurance is often lacking, and there are no safety nets.
+            </p>
+<p class="book-desc">When her father dies at only sixty-seven, killed by diabetes and kidney disease, Nicole feels deep grief as well as rage, knowing that years of precarity and lack of access to healthcare contributed to his early death. And then the unthinkable happens – less than a year later, her beloved mother is diagnosed with cancer, and the physical distance between them becomes insurmountable as COVID-19 descends upon the world.
+            </p>
+<p class="book-desc"> Exploring the enduring strength of family bonds in the face of hardship and tragedy, A Living Remedy examines what it takes to reconcile the distance between one life, one home, and another – and sheds needed light on some of the most persistent and grievous inequalities in American society. </p>
+
+                        <h2 class="price">$26.89</h2>
+                        <a href="#!" class="add-to-cart">
+                            Add to Cart
+                            <img
+                                class="cart-icon"
+                                src="../../images/icons/white-cart2.png"
+                                alt=""
+                            />
+                        </a>
+                    </section>
+                </div>
+            </main>
+    
+            <!-- Footer -->
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="#!">About Us</a></li>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">Terms</a></li>
+                        <li><a href="#!">Copyright</a></li>
+                        <li><a href="../contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div id="footer-trademark">
+                <a href="../../index.html">
+                    <img src="../../images/boat.png" alt="logo"
+                /></a>
+                <p>© 2023 Odyssey, Inc.</p>
+            </div>
+            </footer>
+        </body>
+    </html>
+    

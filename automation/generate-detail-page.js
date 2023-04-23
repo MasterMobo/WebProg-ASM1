@@ -162,6 +162,12 @@ const createPageHTML = (pageData) => {
                         <li><a href="../contact-us.html">Contact Us</a></li>
                     </ul>
                 </nav>
+                <div id="footer-trademark">
+                <a href="../../index.html">
+                    <img src="../../images/boat.png" alt="logo"
+                /></a>
+                <p>© 2023 Odyssey, Inc.</p>
+            </div>
             </footer>
         </body>
     </html>

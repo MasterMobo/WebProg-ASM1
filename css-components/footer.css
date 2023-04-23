@@ -10,6 +10,7 @@ This contains the CSS for the footer.
 */
 
 footer {
+    position: relative;
     width: 100%;
     margin-top: auto;
     border-top: 1px solid var(--border-color);
@@ -17,7 +18,7 @@ footer {
 }
 
 footer nav {
-    height: 80px;
+    height: 50px;
 }
 
 footer nav ul {
@@ -26,6 +27,21 @@ footer nav ul {
     align-self: center;
     justify-content: center;
     gap: 5%;
+}
+#footer-trademark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#footer-trademark img {
+    width: 50px;
+    opacity: 0.5;
+}
+
+#footer-trademark p {
+    color: rgb(72, 66, 65);
+    font-weight: 500;
 }
 
 footer nav li {
@@ -47,6 +63,8 @@ footer nav a:hover {
 
 @media screen and (max-width: 768px) {
     footer nav {
+        height: 80px;
+
         margin-top: 20px;
         display: flex;
         justify-content: center;
